@@ -288,10 +288,10 @@ void VecPool::test2()
 // ===========================================================================
 // Code pattern for creating a vector of vectors of different sizes.
 // ===========================================================================
-// auto v = vp.give< vec<vec<int>> > (3); // A vector of vector of vectors.
+// auto v = vp.give< std::vector<std::vector<int>> > (3); // A vector of vector of vectors.
 // for (int i = 0; i < 3; ++i)
 // {
-//   vp.give<vec<int>>(i * 2 + 1).swap(v[i]);
+//   vp.give< std::vector<int> >(i * 2 + 1).swap(v[i]);
 //   for (int j = 0, jend = v[i].size(); j < jend; ++j)
 //     vp.give<int>(j + 5).swap(v[i][j]);
 // }
