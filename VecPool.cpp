@@ -32,7 +32,7 @@ private:
   
   
   // ===========================================================================
-  // Convert vector<T> to vector<char> that will be throw in pool.
+  // Convert vector<T> to vector<char> that will be thrown in pool.
   // ===========================================================================
   template<typename T>
   std::vector<char> T2char(std::vector<T> &x)
