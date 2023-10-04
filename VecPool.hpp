@@ -153,8 +153,8 @@ void VecPool::test0()
   // ===========================================================================
   // Test if std::vector is implemented in the way that can be exploited.
   // ===========================================================================
-  unsigned fullSize = std::rand() / 31 + 17;
-  unsigned subSize = fullSize - std::rand() / 13;
+  unsigned fullSize = std::rand() % 31 + 17;
+  unsigned subSize = fullSize - std::rand() % 13;
   
   
   typedef std::tuple<char, char, char> tupe; // Arbitrarily selected type.
